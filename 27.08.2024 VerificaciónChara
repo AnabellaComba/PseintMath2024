@@ -1,0 +1,17 @@
+Algoritmo VerificacionCaracter
+   
+    Definir caracter1 Como Caracter
+    
+    
+    Escribir "Ingrese un carácter (S o N): "
+    Leer caracter1
+    
+    
+    Si caracter1 == 'S' O caracter1 == 'N' Entonces
+        
+        Escribir "CORRECTO"
+    Sino
+        
+        Escribir "INCORRECTO"
+    FinSi
+FinAlgoritmo

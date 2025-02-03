@@ -1,0 +1,18 @@
+Algoritmo UsuarioContrasena
+	Definir usuario Como Caracter
+	Definir contrasena Como Entero
+	
+	Escribir " Ingrese un usuario y contraseña"
+	Leer usuario
+	Leer contrasena
+	
+	Si usuario == "admin" y contrasena == 1234 Entonces
+		Escribir "Bienvenido Señor Admin"
+		
+	SiNo
+		Escribir "Usted no está autorizado"
+		
+	FinSi
+	
+	
+FinAlgoritmo

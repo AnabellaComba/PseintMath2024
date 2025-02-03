@@ -1,0 +1,16 @@
+Algoritmo Actividad3
+	
+	Definir numerodejugador Como Entero
+	
+	Escribir "ingresar el número del jugador: "
+	
+	Leer numerodejugador
+	
+	Si numerodejugador > 10 Entonces
+		Definir numeroCalculado Como Real
+		numeroCalculado = numerodejugador * 0.18
+		Escribir "Este es tu numero ", numeroCalculado
+	FinSi
+	
+	
+FinAlgoritmo

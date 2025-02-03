@@ -1,0 +1,17 @@
+Algoritmo DiaDeEntrenamiento
+  
+    Definir dia Como Caracter
+    
+    
+    Escribir "Ingrese un día de la semana (en mayúsculas): "
+    Leer dia
+    
+    
+    Si dia == "LUNES" O dia == "MARTES" O dia == "MIERCOLES" O dia == "JUEVES" Entonces
+        
+        Escribir "Es un día de entrenamiento."
+    Sino
+        
+        Escribir "No es un día de entrenamiento."
+    FinSi
+FinAlgoritmo

@@ -1,0 +1,15 @@
+Algoritmo CompararPromedios
+
+    Definir promedioJugador, promedioMedia Como Real
+    
+    Escribir "Ingrese el promedio del jugador: "
+    Leer promedioJugador
+    Escribir "Ingrese el promedio de la media: "
+    Leer promedioMedia
+
+    Si promedioJugador >= promedioMedia Entonces
+        Escribir "¡Felicidades! El promedio del jugador es mayor que el promedio de la media."
+    Sino
+        Escribir "El promedio del jugador no es mayor que el promedio de la media."
+    FinSi
+FinAlgoritmo

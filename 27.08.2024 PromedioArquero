@@ -1,0 +1,19 @@
+Algoritmo Promedio
+    
+    Definir promedioActual, mediaActual Como Real
+  
+    Escribir "Ingrese el promedio actual del arquero: "
+    Leer promedioActual
+    
+    Escribir "Ingrese el valor de la media actual: "
+    Leer mediaActual
+    
+    
+    Si promedioActual >= mediaActual Entonces
+       
+        Escribir "¡Felicidades! El promedio del arquero es mayor o igual a la media actual."
+    Sino
+      
+        Escribir "El promedio del arquero es menor que la media actual."
+    FinSi
+FinAlgoritmo

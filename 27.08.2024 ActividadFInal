@@ -1,0 +1,197 @@
+Algoritmo VerificarCapicua
+    Definir numero1 Como Entero
+    Escribir "Ingrese un número de tres cifras: "
+    Leer numero1
+	
+    // Verificar si el número es capicúa
+    unidades <- numero1 % 10
+    decenas <- (numero1 / 10) % 10
+    centenas <- (numero1 / 100) % 10
+	
+    Si centenas = unidades Entonces
+        Escribir "El número es capicúa."
+    Sino
+        Escribir "El número no es capicúa."
+    FinSi
+FinAlgoritmo
+
+
+Algoritmo CalcularCostoEntrada
+    Definir edad Como Entero
+    Definir costo Como Real
+    costo <- 5 // Costo base de la entrada
+	
+    Escribir "Ingrese la edad de la persona: "
+    Leer edad
+	
+    Si edad < 12 Entonces
+        costo <- costo * 0.70 // Aplicar 30% de descuento
+    FinSi
+	
+    Escribir "El costo de la entrada es: ", costo, " dólares."
+FinAlgoritmo
+
+Algoritmo ModificarFrase
+    Definir frase Como Caracter
+    Definir longitud Como Entero
+	
+    Escribir "Ingrese una frase o palabra: "
+    Leer frase
+    longitud <- Longitud(frase)
+	
+    Si longitud = 4 Entonces
+        frase <- Concatenar(frase, "!")
+    Sino
+        frase <- Concatenar(frase, "?")
+    FinSi
+	
+    Escribir "La frase final es: ", frase
+FinAlgoritmo
+
+Algoritmo ValidarResultados
+    Definir partido1, partido2, partido3 Como Entero
+    Definir suma Como Entero
+    Definir resultadoValido Como Logico
+	
+    Escribir "Ingrese el resultado del primer partido: "
+    Leer partido1
+    Escribir "Ingrese el resultado del segundo partido: "
+    Leer partido2
+    Escribir "Ingrese el resultado del tercer partido: "
+    Leer partido3
+	
+    suma <- partido1 + partido2 + partido3
+	
+    Si suma >= 1 Y suma <= 10 Entonces
+        resultadoValido <- Verdadero
+    Sino
+        resultadoValido <- Falso
+    FinSi
+	
+    Si resultadoValido Entonces
+        Escribir "Los 3 resultados son correctos."
+    Sino
+        Escribir "Los 3 resultados no son correctos."
+    FinSi
+FinAlgoritmo
+
+Algoritmo ValidarNombreEquipo
+    Definir nombre Como Caracter
+    Definir primera Letra Como Caracter
+	
+    Escribir "Ingrese el nombre del equipo: "
+    Leer nombre
+	
+    primera Letra <- Subcadena(nombre, 1, 1)
+	
+    Si primera Letra = "A" Entonces
+        Escribir "CORRECTO"
+    Sino
+        Escribir "INCORRECTO"
+    FinSi
+FinAlgoritmo
+
+Algoritmo ValidarNombreEquipo
+    Definir nombre Como Caracter
+    Definir primera Letra, ultima Letra Como Caracter
+	
+    Escribir "Ingrese el nombre del equipo: "
+    Leer nombre
+	
+    primera Letra <- Subcadena(nombre, 1, 1)
+    ultima Letra <- Subcadena(nombre, Longitud(nombre), 1)
+	
+    Si primera Letra = ultima Letra Entonces
+        Escribir "CORRECTO"
+    Sino
+        Escribir "INCORRECTO"
+    FinSi
+FinAlgoritmo
+
+Algoritmo EvaluarNotas
+    Definir nota1, nota2, nota3 Como Real
+    Definir promedio Como Real
+	
+    Escribir "Ingrese la primera nota: "
+    Leer nota1
+    Escribir "Ingrese la segunda nota: "
+    Leer nota2
+    Escribir "Ingrese la tercera nota: "
+    Leer nota3
+	
+    promedio <- (nota1 + nota2 + nota3) / 3
+	
+    Si promedio >= 70 Entonces
+        Escribir "El alumno aprueba el curso."
+    Sino
+        Escribir "El alumno reprueba el curso."
+    FinSi
+FinAlgoritmo
+
+Algoritmo CalcularMontoCompra
+    Definir mes Como Caracter
+    Definir importe Como Real
+    Definir descuento Como Real
+	
+    Escribir "Ingrese el mes (en formato texto): "
+    Leer mes
+    Escribir "Ingrese el importe de la compra: "
+    Leer importe
+	
+    // Inicialmente no hay descuento
+    descuento <- 0
+	
+    // Verificar si el mes es septiembre, octubre o noviembre
+    Si mes = "septiembre" O mes = "octubre" O mes = "noviembre" Entonces
+        descuento <- 0.10
+    FinSi
+	
+    // Calcular el monto final
+    importeFinal <- importe - (importe * descuento)
+    Escribir "El monto total a pagar es: ", importeFinal, " dólares."
+FinAlgoritmo
+
+
+Algoritmo VerificarPares
+    Definir num1, num2 Como Entero
+	
+    Escribir "Ingrese el primer número entero: "
+    Leer num1
+    Escribir "Ingrese el segundo número entero: "
+    Leer num2
+	
+    Si (num1 % 2 = 0) Y (num2 % 2 = 0) Entonces
+        Escribir "Ambos números son pares."
+    Sino
+        Escribir "Los números no son pares, o uno de ellos no es par."
+    FinSi
+FinAlgoritmo
+
+Algoritmo CalcularAlquilerAuto
+    Definir horas Como Real
+    Definir litrosNafta Como Real
+    Definir costoTotal Como Real
+	
+    Escribir "Ingrese el número de horas de uso: "
+    Leer horas
+	
+    Si horas <= 2 Entonces
+        costoTotal <- 400
+    Sino
+        Escribir "Ingrese la cantidad de litros de nafta gastados: "
+        Leer litrosNafta
+        // Costo adicional por horas extra
+        costoHorasExtra <- (horas - 2) * 60 * 5.20
+        // Costo por nafta
+        costoNafta <- litrosNafta * 40
+        // Total a pagar
+        costoTotal <- 400 + costoHorasExtra + costoNafta
+    FinSi
+	
+    Escribir "El total a pagar es: ", costoTotal, " pesos."
+FinAlgoritmo
+
+
+
+
+
